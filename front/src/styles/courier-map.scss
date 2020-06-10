@@ -1,0 +1,57 @@
+.MuiButtonBase-root.MuiTableSortLabel-root {
+    font-weight: 700;
+}
+
+div.courier-map-container{
+    display: flex;
+    height: 100vh;
+    .YMAP{
+        height: 100%;
+        width: 100%;
+    }
+
+    .courier-map-list-btn{
+        position: absolute;
+        left: -90px;
+        top: 15px;
+        z-index: 990;
+        height: 75px;
+        width: 75px;
+        font-size: 65px;
+        line-height: 75px;
+        text-align: center;
+        color: #b21b22;
+        transition: transform 0.5s ease-in-out;
+        &:hover {
+            cursor: pointer;
+        }
+        &.right{
+            transform: rotate(-180deg);
+        }
+    }
+    .courier-map-list-spacer{
+        min-width: 700px;
+        position: relative;
+        right:0;
+        height: 100vh;
+        &.collapsed{
+            min-width: 0px;
+            max-width: 0px;
+        }
+    }
+    .courier-map-list{
+        min-width: 700px;
+        width: 700px;
+        position: absolute;
+        right: 0;
+        transition: all .5s ease;
+        height: 100vh;
+        & .MuiPaper-root{
+            overflow: hidden;
+        }
+        &.collapsed{
+            min-width: 0;
+            width: 0px;
+        }
+    }
+}

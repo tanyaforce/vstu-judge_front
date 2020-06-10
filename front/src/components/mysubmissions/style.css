@@ -1,0 +1,29 @@
+#submissions {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin: 50px;
+  }
+  
+  #submissions td, #submissions th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  thead {
+      background-color: #bb2211;
+      color: #fff
+  }
+  thead > td:hover{
+    background-color: #bb2211;
+    color: #fff
+  }
+  #submissions tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #submissions tr:hover {background-color: #ddd;}
+  
+  #submissions th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: white;
+  }
